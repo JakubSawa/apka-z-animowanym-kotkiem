@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apka z animowanym kotem</title>
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+  
+
+  
+
+
+
+  
+  <div class="container">
+    
+
+
+    <div class="header">
+      <div class="cat-profile">
+        <div class="profile-img">
+          <img src="./IMG/iconmonstr-cat-7-240-2.png" alt="">
+        </div>
+        <div class="cat-info">
+          <h3 id="message"></h3>
+          <h4>Wiek: 4 lata</h4>
+          
+        </div>
+        <div class="cat-sound">
+          <button class="music-btn" onclick="sound()"><i class="fa-solid fa-volume-high"></i></button>
+        </div>
+      </div>
+
+      <div class="life-stats">
+
+        <div class="container-timer">
+          <i class="fa-solid fa-heart"></i>
+          <div class="timer-wrapper">
+            <div class="timer-bar"></div>
+            
+          </div>
+        </div>
+
+        <div class="container-timer">
+          <i class="fa-solid fa-burger"></i>
+          <div class="timer-wrapper">
+            <div class="timer-bar"></div>
+          </div>
+        </div>
+
+        <div class="container-timer">
+          <i class="fa-solid fa-face-smile"></i>
+          <div class="timer-wrapper">
+            <div class="timer-bar"></div>
+          </div>
+        </div>
+
+        <div class="container-timer">
+          <i class="fa-solid fa-shower"></i>
+          <div class="timer-wrapper">
+            <div class="timer-bar"></div>
+          </div>
+        </div>
+
+        
+        
+      </div>
+
+      <div class="menu-container">
+        <div class="button">
+           <p>Inne pokoje<i class="fa-solid fa-door-open"></i></p>
+        </div>
+        <ul>
+           <li>
+              <button class="rooms" onclick="changeroom1()"><i class="fa-solid fa-couch"></i>Salon</button>
+
+          </li>
+
+          <li>
+            <button class="rooms" onclick="changeroom2()"><i class="fa-solid fa-utensils"></i>Kuchnia</button>
+
+        </li>
+
+        <li>
+          <button class="rooms" onclick="changeroom3()"><i class="fa-solid fa-bath"></i>Łazienka</button>
+
+      </li>
+
+      <li>
+        <button class="rooms" onclick="changeroom4()"><i class="fa-solid fa-bed"></i>Sypialnia</button>
+
+    </li>
+
+           
+        </ul>
+     </div>
+
+     
+    </div>
+
+      
+    
+    
+    
+    <div class="cat-box">
+      <img id="pic" src="./IMG/kot.png" alt="">
+    </div>
+
+
+    <div class="cat-buttons">
+      <button onclick="change1()"><div class="cat-buttons">
+        <div class="buttons-health">
+          <img src="./IMG/burger.png" alt="">
+          <h6>Nakarm</h6>
+        </div>  </button>
+      <button onclick="change2()"><div class="buttons-health">
+        <img src="./IMG/wloczka.png" alt="">
+        <h6>Pobaw się</h6>
+      </div> </button>
+      <button onclick="change3()"> <div class="buttons-health">
+        <img src="./IMG/prysznic.png" alt="">
+        <h6>Umyj</h6>
+      </div> </button>
+      <button onclick="change4()"><div class="buttons-health">
+        <img src="./IMG/swiatlo.png" alt="">
+        <h6>Utpij</h6>
+      </div> </button>
+      
+    </div>
+
+  </div>
+
+  <div class="popup">
+    
+    <div class="container-popup">
+      <div class="box-popup">
+        <button id="close">&times;</button>
+        <img src="./IMG/logo.jpeg" alt="">
+        <h6>Wpisz imie dla Twojego kotka</h6>
+        <input id="userInput">
+        <button id="button-imie" onclick="myFunction() ">Graj</button>
+        
+        <p>Gdy wpiszesz imię naciśnij 2 razy przycisk graj!</p>
+      </div> 
+    </div>
+  </div>
+
+<script src="./app.js"></script> 
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</body>
+</html>
